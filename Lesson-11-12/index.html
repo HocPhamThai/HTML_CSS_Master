@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Images, Picture, Breakpoint, Favicon</title>
+    </head>
+    <body>
+        <!-- JPEG: Photos, nhiều màu -->
+        <!-- PNG: Logo, transparency -->
+        <!-- GIF: Animation -->
+        <!-- SVG: Icons, vector graphics -->
+        <!-- WebP: Modern, tối ưu file size -->
+        <img src="https://picsum.photos/seed/image1/400/300" alt="Random Image 1" width="400" height="300" />
+        <img src="https://picsum.photos/seed/image2/400/300" alt="Random Image 2" width="400" height="300" />
+        
+        <hr />
+
+        <picture>
+            <!-- Mobile: 320 - 576px -->
+            <source media="(max-width: 576px)" srcset="https://picsum.photos/320/240" />
+
+            <!-- Tablet: 577 - 768px -->
+            <source media="(min-width: 577px) and (max-width: 768px)" srcset="https://picsum.photos/500/375" />
+
+            <!-- Desktop: 769 - 1200px -->
+            <source media="(min-width: 769px) and (max-width: 1200px)" srcset="https://picsum.photos/800/600" />
+
+            <!-- Large Desktop: 1201px+ -->
+            <source media="(min-width: 1201px)" srcset="https://picsum.photos/1000/750" />
+
+            <!-- Fallback -->
+            <img src="https://picsum.photos/400/300" alt="Responsive Image" />
+        </picture>
+    </body>
+</html>
