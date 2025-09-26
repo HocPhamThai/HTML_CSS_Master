@@ -1,0 +1,12 @@
+body {
+    font-size: xx-large;
+}
+
+#id-1 {
+    color: red;
+    font-size: 50px;
+}
+
+.group-class {
+    color: blue;
+}

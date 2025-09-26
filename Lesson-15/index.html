@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML List</title>
+    </head>
+    <body>
+        Danh sách không sắp xếp:
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Water</li>
+        </ul>
+        <ul>
+            <li>
+                Coffee
+                <ul>
+                    <li>Pure Black</li>
+                    <li>Milk Black Coffee</li>
+                    <li>Bac Xiu</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 
+            <ul><li></li></ul>
+            *Sử dụng thuộc tính CSS:
+            list-style-type, với các giá trị:
+            disc, circle, square, none
+        -->
+
+        Danh sách có sắp xếp:
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Water</li>
+        </ol>
+        <ol>
+            <li>
+                Coffee
+                <ol>
+                    <li>Black</li>
+                    <li>Bac Xiu</li>
+                </ol>
+            </li>
+        </ol>
+        <ol>
+            <li></li>
+        </ol>
+        <!-- 
+            Sử dụng thuộc tính HTML (attribute):
+            type: Kiểu giá trị:
+            1, A, a, I, i
+            start: Chỉ định giá trị bắt đầu của danh sách.
+            reversed: Đảo ngược thứ tự của danh sách 
+        -->
+
+        Danh sách dạng mô tả:
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- Pure black</dd>
+
+            <dt>Tea</dt>
+            <dd>- Shan Tuyet</dd>
+        </dl>
+    </body>
+</html>
