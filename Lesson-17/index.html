@@ -3,32 +3,65 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
-        <title>HTML Class - ID</title>
-
-        <!-- scritp không thuộc về DOM thì nên để ở đây ví dụ gg analysis -->
-
-        <!-- defer: script được tải song song với html, nhưng sẽ thực thi sau khi html được tải hoàn toàn -->
-
-        <!-- async: script được tải song song với html, nhưng sẽ thực thi ngay sau khi được tải xong (có thể làm gián đoạn tải HTML) 
-            . Phù hợp với các script độc lập không phụ thuộc phần từ -->
-        <!-- <script src="./index.js" async></script> -->
+        <title>HTML List</title>
     </head>
     <body>
-        <div id="id-1">Content 1</div>
-        <div class="group-class">Content 2</div>
-        <div class="group-class">Content 3</div>
-        <div class="group-class">Content 4</div>
-        <div class="group-class">Content 5</div>
+        Danh sách không sắp xếp:
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Water</li>
+        </ul>
+        <ul>
+            <li>
+                Coffee
+                <ul>
+                    <li>Pure Black</li>
+                    <li>Milk Black Coffee</li>
+                    <li>Bac Xiu</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 
+            <ul><li></li></ul>
+            *Sử dụng thuộc tính CSS:
+            list-style-type, với các giá trị:
+            disc, circle, square, none
+        -->
 
-        <!-- Có thể đặt thẻ script ở cuối trước thẻ đóng body để đảm bảo trình duyệt đã render xong HTML -->
-        <script src="./index.js"></script>
+        Danh sách có sắp xếp:
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Water</li>
+        </ol>
+        <ol>
+            <li>
+                Coffee
+                <ol>
+                    <li>Black</li>
+                    <li>Bac Xiu</li>
+                </ol>
+            </li>
+        </ol>
+        <ol>
+            <li></li>
+        </ol>
+        <!-- 
+            Sử dụng thuộc tính HTML (attribute):
+            type: Kiểu giá trị:
+            1, A, a, I, i
+            start: Chỉ định giá trị bắt đầu của danh sách.
+            reversed: Đảo ngược thứ tự của danh sách 
+        -->
+
+        Danh sách dạng mô tả:
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- Pure black</dd>
+
+            <dt>Tea</dt>
+            <dd>- Shan Tuyet</dd>
+        </dl>
     </body>
 </html>
-<!-- 
-    Class và Id là 2 thuộc tính phổ biến để bạn gắn nhãn hoặc định danh cho các phần tử (HTML Elements) trên trang web.
-- Nhiệm vụ của chúng là giúp chúng ta phân biệt các phần tử, tùy chỉnh giao diện bằng CSS, hoặc thao tác truy cập DOM tới các phần tử thông qua JavaScript.
-Điểm Khác Nhau Quan Trọng giữa Id so với Class:
-- Id là Unique, vì vậy một phần tử HTML phải có một Id riêng biệt - không được trùng lặp với bất kỳ phần tử nào khác. (Nhớ lại ví dụ bài HTML Link - Chúng ta đã dùng Id để làm một chiếc mục lục - unique)
-- Còn đối với Class thì thoải mái hơn, có thể có nhiều phần tử HTML cùng sử dụng chung một tên Class được, cũng như ngược lại: Một phần tử có thể có nhiều class khác nhau. Rất phù hợp để bạn thao tác với nhiều phần tử trên trang web cùng lúc, đặc biệt là thao tác xử lý giao diện trên trang web với CSS.
--->
