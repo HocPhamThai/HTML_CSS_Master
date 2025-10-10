@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Input</title>
+    </head>
+    <body>
+        <form name="register-form">
+            <label for="username">Username:</label>
+            <input type="text" name="fullname" id="username" placeholder="Enter your username..." required /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required /><br /><br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required /><br /><br />
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob" id="dob" /><br /><br />
+            <label for="color">Your favourite color:</label>
+            <input type="color" name="color" id="color" /><br /><br />
+            <button type="submit">Register</button>
+        </form>
+        <!-- Mục đích: gữi dữ liệu về server thông qua action -->
+        <!-- Lưu ý:
+            - type="text|email|password|date|color|number|tel|url|file|checkbox|radio|submit|reset|button|hidden"
+            - required: bắt buộc nhập
+            - placeholder: text hiển thị trong input khi chưa nhập gì
+            - name: tên của input, dùng để gữi dữ liệu về server
+            - id: định danh của input, dùng để liên kết với label
+            - label: thẻ dùng để mô tả input, giúp tăng khả năng truy cập (accessibility)
+            - value: giá trị mặc định của input (nếu có) 
+        -->
+    </body>
+</html>

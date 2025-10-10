@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML video - Audio</title>
+    </head>
+    <body>
+        <!-- Video -->
+        <h1>Video</h1>
+        <video width="320" height="240" controls autoplay muted playsinline loop>
+            <source src="videos/coffee-video.mp4" type="video/mp4" />
+            Trình duyệt của bạn không hỗ trợ hiển thị video!
+        </video>
+        <!-- Audio -->
+        <h1>Audio</h1>
+        <audio controls autoplay muted loop>
+            <source src="audio/Invisible Beauty - Aakash Gandhi.mp3" type="audio/mpeg" />
+            Trình duyệt của bạn không hỗ trợ tệp âm thanh!
+        </audio>
+        <!-- 
+            Notes:
+            - Video: controls, autoplay, muted, playsinline, loop
+            - Audio: controls, autoplay, muted, loop
+                - controls: hiển thị thanh điều khiển (play, pause, volume...)
+                - autoplay: tự động phát
+                - muted: tắt âm thanh
+                - playsinline: phát video trong dòng (dành cho thiết bị di động)
+                - loop: lặp lại
+            - Nguồn video/audio: https://www.pexels.com/, https://pixabay.com/, https://www.bensound.com/
+        -->
+    </body>
+</html>
