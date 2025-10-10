@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Input validation</title>
+    </head>
+    <body>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name" minlength="3" maxlength="6" required />
+            <br /><br />
+            <label>Email:</label>
+            <input type="email" name="email" required />
+            <br /><br />
+            <label>Age:</label>
+            <input type="number" name="age" min="18" max="99" required />
+            <br /><br />
+            <button type="submit">Submit form</button>
+            <button type="reset">Reset form</button>
+        </form>
+        <!-- 
+        Notes:
+        - Bổ sung chút kiến thức vỡ lòng về regex:
+https://viblo.asia/p/hoc-regular-expression-va-cuoc-doi-ban-se-bot-kho-updated-v22-Az45bnoO5xY
+        -->
+    </body>
+</html>
